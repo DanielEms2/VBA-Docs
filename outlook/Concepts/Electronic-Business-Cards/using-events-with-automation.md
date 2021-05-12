@@ -46,7 +46,7 @@ You must use the  `WithEvents` keyword to specify that the object variable will 
 
 ## Write the Event Procedure
 
-After the new object has been declared with events, it appears in the **bject** list in the class module Code window, and you can select the object's event procedures from the **Procedures/Events** list. For example, when you select the **[ItemSend](../../../api/Outlook.Application.ItemSend.md)** event for an **Application** object declared as `myOlApp`, the following empty procedure appears in the Code window.
+After the new object has been declared with events, it appears in the **object** list in the class module Code window, and you can select the object's event procedures from the **Procedures/Events** list. For example, when you select the **[ItemSend](../../../api/Outlook.Application.ItemSend.md)** event for an **Application** object declared as `myOlApp`, the following empty procedure appears in the Code window.
 
 ```vb
 Private Sub myOlApp_ItemSend(Item as Object, Cancel as Boolean) 
@@ -56,7 +56,7 @@ End Sub
 
 ## Initialize the Declared Object
 
-Before the procedure will run, you must connect the declared object (in this example,  `myOlApp`) with the **pplication** object. If you declared the object in a class module named `EventClassModule`, then you can use the following code in any module.
+Before the procedure will run, you must connect the declared object (in this example,  `myOlApp`) with the **Application** object. If you declared the object in a class module named `EventClassModule`, then you can use the following code in any module.
 
 ```vb
 Dim myClass as New EventClassModule  
